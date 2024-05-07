@@ -2,7 +2,6 @@ import "./App.css";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages";
 import SigninPage from "./pages/signin";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
     //   </Switch>
     // </Router>
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SigninPage />} />
